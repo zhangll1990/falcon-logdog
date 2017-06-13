@@ -1,0 +1,57 @@
+{
+  "logLevel": "WARN",
+  "metric": "log",
+  "timer": 60,
+  "agent": "http://127.0.0.1:1988/v1/push",
+  "host": "10.0.100.85",
+  "files": [
+    {
+      "path": "/opt/machtalk/logs/xcloud-cm",
+      "prefix": "xcloud-cm",
+      "suffix": "log",
+      "keywords": [
+        {
+          "exp": "closing socket connection and attempting reconnect",
+          "tag": "error"
+        },
+        {
+          "exp": "服务器下线: null",
+          "tag": "error"
+        }
+      ]
+    },
+    {
+      "path": "/opt/abc/logs/xcloud-1",
+      "prefix": "xcloud-1",
+      "suffix": "log",
+      "keywords": [
+        {
+          "exp": "closing socket connection and attempting reconnect",
+          "tag": "error"
+        }
+      ]
+    },
+     {
+      "path": "/opt/abc/logs/xcloud-2",
+      "prefix": "xcloud-2",
+      "suffix": "log",
+      "keywords": [
+        {
+          "exp": "closing socket connection and attempting reconnect",
+          "tag": "error"
+        }
+      ]
+    },
+     {
+      "path": "/opt/abc/logs/xcloud-3",
+      "prefix": "xcloud-3",
+      "suffix": "log",
+      "keywords": [
+        {
+          "exp": "closing socket connection and attempting reconnect",
+          "tag": "error"
+        }
+      ]
+    }
+  ]
+}
